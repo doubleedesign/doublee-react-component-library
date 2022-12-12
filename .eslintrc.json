@@ -1,0 +1,45 @@
+{
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es2021": true
+	},
+	"extends": [
+		"eslint:recommended"
+	],
+	"rules": {
+		"quotes": [
+			"warn",
+			"single"
+		],
+		"space-in-parens": 0,
+		"array-bracket-spacing": 0,
+		"object-curly-spacing": [
+			"error",
+			"always"
+		],
+		"computed-property-spacing": "off",
+		"space-before-function-paren": "off",
+		"no-nested-ternary": "off",
+		"space-unary-ops": "off",
+		"semi": [
+			"warn",
+			"always"
+		],
+		"brace-style": [
+			1,
+			"stroustrup",
+			{
+				"allowSingleLine": false
+			}
+		],
+		"max-len": [
+			"warn",
+			{
+				"comments": 120,
+				"code": 120,
+				"tabWidth": 4
+			}
+		]
+	}
+}

@@ -1,0 +1,55 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Inter+Tight:wght@200;800&display=swap');
+
+:root {
+	--ifm-color-primary: #4527a0;
+	--ifm-color-primary-dark: #3e2390;
+	--ifm-color-primary-darker: #3b2188;
+	--ifm-color-primary-darkest: #140078;
+	--ifm-color-primary-light: #7953d2;
+	--ifm-color-primary-lighter: #9575cd;
+	--ifm-color-primary-lightest: #e6ceff;
+	--ifm-navbar-link-hover-color: var(--ifm-color-primary-lighter);
+	--ifm-font-family-base: 'Crimson Text', serif;
+	--ifm-heading-font-family: 'Crimson Text', serif;
+}
+
+[data-theme='dark'] {
+	--ifm-color-primary: #b39ddb;
+	--ifm-color-primary-dark: #9e82d1;
+	--ifm-color-primary-darker: #9e82d1;
+	--ifm-color-primary-darkest: #9374cc;
+	--ifm-color-primary-light: #c8b8e5;
+	--ifm-color-primary-lighter: #d3c6ea;
+	--ifm-color-primary-lightest: #f3eff9;
+	--ifm-navbar-link-hover-color: var(--ifm-color-primary-lighter);
+}
+
+.navbar__brand {
+
+	&:hover, &:focus, &:active {
+		color: var(--ifm-navbar-link-hover-color);
+	}
+
+	&__name {
+		font-family: "Inter Tight", var(--ifm-font-family-base);
+
+		strong {
+			font-weight: 800;
+		}
+
+		span {
+			font-weight: 300;
+		}
+
+	}
+}
+
+.navbar__link:hover, .navbar__link--active {
+	color: var(--ifm-navbar-link-hover-color);
+}
