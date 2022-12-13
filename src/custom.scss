@@ -4,7 +4,7 @@
  * work well for content-centric websites.
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Inter+Tight:wght@200;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Inter+Tight:wght@300;800&display=swap');
 
 :root {
 	--ifm-color-primary: #4527a0;
@@ -21,7 +21,9 @@
 	--ifm-color-warning: #ffba00;
 	--ifm-color-danger: #fa383e;
 	--ifm-font-family-base: 'Crimson Text', serif;
-	--ifm-heading-font-family: 'Crimson Text', serif;
+	--ifm-font-family-secondary: 'Inter Tight', var(--ifm-font-family-base);
+	--ifm-heading-font-family: var(--ifm-font-family-base);
+	--doc-sidebar-width: 15rem !important;
 }
 
 [data-theme='dark'] {
@@ -39,63 +41,9 @@
 	--ifm-color-danger: #fa383e;
 }
 
-.navbar {
+.theme-doc-markdown {
 
-	&__brand {
-		&:hover, &:focus, &:active {
-			color: var(--ifm-navbar-link-hover-color);
-		}
-
-		&__name {
-			font-family: "Inter Tight", var(--ifm-font-family-base);
-
-			strong {
-				font-weight: 800;
-			}
-
-			span {
-				font-weight: 300;
-			}
-		}
-	}
-
-	&__link {
-		&:hover, &:focus, &:active, &--active {
-			color: var(--ifm-navbar-link-hover-color);
-		}
-	}
-
-	&--dark {
-		.toggleButton_src-theme-ColorModeToggle-styles-module {
-			&:hover, &:focus, &:active {
-				background: var(--ifm-color-gray-700);
-			}
-		}
-
-	}
-}
-
-.footer {
-
-	a {
-		text-decoration: underline;
-		text-decoration-color: rgba(black, 0.3);
-		transition: color 0.2s ease, text-decoration 0.2s ease;
-
-		[data-theme='dark'] & {
-			text-decoration-color: rgba(white, 0.4);
-		}
-
-		&:hover, &:focus, &:active {
-			text-decoration-color: currentColor;
-		}
-	}
-
-	&__bottom {
-
-		&__author {
-			display: block;
-			font-size: 1rem;
-		}
+	p {
+		font-size: 1.2rem;
 	}
 }

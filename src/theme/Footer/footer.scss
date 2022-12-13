@@ -1,0 +1,37 @@
+.footer {
+	padding: 1rem;
+	background: transparent;
+
+	a {
+		text-decoration: underline;
+		text-decoration-color: rgba(black, 0.3);
+		transition: color 0.2s ease, text-decoration 0.2s ease;
+
+		[data-theme='dark'] & {
+			text-decoration-color: rgba(white, 0.4);
+		}
+
+		&:hover, &:focus, &:active {
+			text-decoration-color: currentColor;
+		}
+	}
+
+	&__bottom {
+		font-family: var(--ifm-font-family-secondary);
+		border-top: 1px solid var(--ifm-color-gray-300);
+		padding-top: 1rem;
+
+		&__author {
+			font-weight: 800;
+			display: block;
+			font-size: 0.8rem;
+			margin-bottom: 0.5rem;
+		}
+
+		&__credits {
+			display: block;
+			font-size: 0.7em;
+			line-height: 1.25;
+		}
+	}
+}

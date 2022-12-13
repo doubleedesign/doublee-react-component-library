@@ -19,7 +19,7 @@ const config = {
 		footer: {
 			author: 'Leesa with a Double-E',
 			authorLink: 'https://www.github.com/doubleedesign',
-			credits: 'Built with Docusaurus. "Logo" icon from Font Awesome.'
+			credits: 'This site built with Docusaurus. "Logo" icon from Font Awesome.'
 		}
 	},
 
@@ -41,7 +41,7 @@ const config = {
 					sidebarPath: require.resolve('./sidebars.js'),
 				},
 				theme: {
-					customCss: require.resolve('./src/css/custom.scss'),
+					customCss: require.resolve('./src/custom.scss'),
 				},
 			}),
 		],

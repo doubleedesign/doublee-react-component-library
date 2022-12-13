@@ -1,0 +1,17 @@
+.docindex-wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	&__inner {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+
+		> footer {
+			margin-top: auto;
+		}
+	}
+}

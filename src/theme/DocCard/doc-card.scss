@@ -1,0 +1,38 @@
+.card {
+	height: 100%;
+	border: 1px solid var(--ifm-color-gray-300);
+	border-radius: var(--ifm-pagination-nav-border-radius);
+	box-shadow: none;
+	background: transparent;
+	color: var(--ifm-color-gray-700);
+	text-decoration: none;
+	transition: all 0.3s ease;
+
+	&:hover, &:focus, &:active {
+		border-color: var(--ifm-color-primary);
+		text-decoration: none;
+	}
+
+	[data-theme="dark"] & {
+		border-color: var(--ifm-color-gray-800);
+		color: var(--ifm-color-gray-300);
+	}
+
+	h2, p {
+		padding: 1rem;
+		margin-bottom: 0;
+	}
+
+	h2 {
+		font-family: var(--ifm-font-family-secondary);
+		font-size: 1.25rem;
+		font-weight: 800;
+		color: var(--ifm-color-primary-dark);
+	}
+
+	p {
+		padding-top: 0;
+		font-size: 1.1rem;
+		line-height: 1.2;
+	}
+}

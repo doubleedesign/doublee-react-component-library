@@ -1,0 +1,35 @@
+.navbar {
+
+	&__brand {
+		&:hover, &:focus, &:active {
+			color: var(--ifm-navbar-link-hover-color);
+		}
+
+		&__name {
+			font-family: "Inter Tight", var(--ifm-font-family-base);
+
+			strong {
+				font-weight: 800;
+			}
+
+			span {
+				font-weight: 300;
+			}
+		}
+	}
+
+	&__link {
+		&:hover, &:focus, &:active, &--active {
+			color: var(--ifm-navbar-link-hover-color);
+		}
+	}
+
+	&--dark {
+		.toggleButton_src-theme-ColorModeToggle-styles-module {
+			&:hover, &:focus, &:active {
+				background: var(--ifm-color-gray-700);
+			}
+		}
+
+	}
+}

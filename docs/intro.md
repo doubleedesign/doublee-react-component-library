@@ -5,4 +5,4 @@ slug: /
 
 # Intro
 
-// TODO: Write an intro.
+Hello. I'm creating a design system for some React-based projects. Perhaps you'd like to see it.

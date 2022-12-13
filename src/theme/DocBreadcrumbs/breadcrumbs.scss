@@ -1,0 +1,39 @@
+.breadcrumbs {
+	font-family: var(--ifm-font-family-secondary);
+	font-weight: 300;
+	font-size: 0.85rem;
+	margin-bottom: 1rem;
+
+	&__item {
+
+		&__link {
+			border-radius: 0;
+			padding: 0;
+			transition: all 0.3s ease;
+			text-decoration: underline;
+			text-decoration-color: transparent;
+
+			&:hover, &:focus, &:active {
+				background: transparent;
+				text-decoration-color: currentColor;
+			}
+		}
+
+		&__separator {
+			font-size: 0.6rem;
+			display: inline-block;
+			padding: 0.5rem;
+			box-sizing: border-box;
+		}
+
+		&:not(:last-child) {
+			&:after {
+				content: none;
+			}
+		}
+
+		&__plaintext {
+			color: var(--ifm-color-gray-700);
+		}
+	}
+}

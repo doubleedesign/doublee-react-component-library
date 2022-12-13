@@ -7,6 +7,10 @@
 	"extends": [
 		"eslint:recommended"
 	],
+	"parser": "@babel/eslint-parser",
+	"parserOptions": {
+		"sourceType": "module"
+	},
 	"rules": {
 		"quotes": [
 			"warn",
@@ -27,7 +31,7 @@
 			"always"
 		],
 		"brace-style": [
-			1,
+			"warn",
 			"stroustrup",
 			{
 				"allowSingleLine": false
@@ -40,6 +44,7 @@
 				"code": 120,
 				"tabWidth": 4
 			}
-		]
+		],
+		"no-unused-vars": "off"
 	}
 }
