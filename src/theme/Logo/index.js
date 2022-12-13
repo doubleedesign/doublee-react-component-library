@@ -5,10 +5,10 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {useThemeConfig} from '@docusaurus/theme-common';
 import ThemedImage from '@theme/ThemedImage';
 
-function LogoThemedImage({logo, alt, imageClassName}) {
+function LogoThemedImage({logo, alt, imageClassName, themeOverride}) {
 	const sources = {
-		light: useBaseUrl(logo.src),
-		dark: useBaseUrl(logo.srcDark || logo.src),
+		light: themeOverride === 'dark' ? useBaseUrl(logo.srcDark || logo.src) : useBaseUrl(logo.src),
+		dark: themeOverride === 'light' ? useBaseUrl(logo.src) : useBaseUrl(logo.srcDark || logo.src),
 	};
 	const themedImage = (
 		<ThemedImage
@@ -55,6 +55,7 @@ export default function Logo(props) {
 					logo={logo}
 					alt={alt}
 					imageClassName={imageClassName}
+					themeOverride={props.theme}
 				/>
 			)}
 			{navbarTitle != null &&

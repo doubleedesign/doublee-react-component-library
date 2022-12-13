@@ -6,16 +6,21 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: 'The Double-E Design System',
+	title: 'Double-E Design System',
 	tagline: 'Designing things and writing code',
 	url: 'https://your-docusaurus-test-site.com',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
-	favicon: 'img/favicon.ico',
+	favicon: 'img/icon.svg',
 
 	customFields: {
 		titleAppend: 'for React',
+		footer: {
+			author: 'Leesa with a Double-E',
+			authorLink: 'https://www.github.com/doubleedesign',
+			credits: 'Built with Docusaurus. "Logo" icon from Font Awesome.'
+		}
 	},
 
 	// Even if you don't use internalization, you can use this field to set useful
@@ -49,18 +54,21 @@ const config = {
 		({
 			navbar: {
 				style: 'dark',
-				title: 'The Double-E Design System',
+				title: 'Double-E Design System',
+				logo: {
+					src: 'img/icon.svg',
+					srcDark: 'img/icon-darkmode.svg'
+				},
 				items: [
 					{
-						href: 'https://github.com/doubleedesign/doublee-design-system-for-react',
+						href: 'https://github.com/doubleedesign/doublee-design-system-react',
 						label: 'GitHub',
 						position: 'right',
 					},
 				],
 			},
 			footer: {
-				style: 'light',
-				copyright: 'Built with Docusaurus',
+				style: 'light'
 			},
 			prism: {
 				theme: lightCodeTheme,

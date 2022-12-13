@@ -15,6 +15,11 @@
 	--ifm-color-primary-lighter: #9575cd;
 	--ifm-color-primary-lightest: #e6ceff;
 	--ifm-navbar-link-hover-color: var(--ifm-color-primary-lighter);
+	--ifm-color-secondary: #ebedf0;
+	--ifm-color-success: #00a400;
+	--ifm-color-info: #54c7ec;
+	--ifm-color-warning: #ffba00;
+	--ifm-color-danger: #fa383e;
 	--ifm-font-family-base: 'Crimson Text', serif;
 	--ifm-heading-font-family: 'Crimson Text', serif;
 }
@@ -28,28 +33,69 @@
 	--ifm-color-primary-lighter: #d3c6ea;
 	--ifm-color-primary-lightest: #f3eff9;
 	--ifm-navbar-link-hover-color: var(--ifm-color-primary-lighter);
+	--ifm-color-success: #00a400;
+	--ifm-color-info: #54c7ec;
+	--ifm-color-warning: #ffba00;
+	--ifm-color-danger: #fa383e;
 }
 
-.navbar__brand {
+.navbar {
 
-	&:hover, &:focus, &:active {
-		color: var(--ifm-navbar-link-hover-color);
-	}
-
-	&__name {
-		font-family: "Inter Tight", var(--ifm-font-family-base);
-
-		strong {
-			font-weight: 800;
+	&__brand {
+		&:hover, &:focus, &:active {
+			color: var(--ifm-navbar-link-hover-color);
 		}
 
-		span {
-			font-weight: 300;
+		&__name {
+			font-family: "Inter Tight", var(--ifm-font-family-base);
+
+			strong {
+				font-weight: 800;
+			}
+
+			span {
+				font-weight: 300;
+			}
+		}
+	}
+
+	&__link {
+		&:hover, &:focus, &:active, &--active {
+			color: var(--ifm-navbar-link-hover-color);
+		}
+	}
+
+	&--dark {
+		.toggleButton_src-theme-ColorModeToggle-styles-module {
+			&:hover, &:focus, &:active {
+				background: var(--ifm-color-gray-700);
+			}
 		}
 
 	}
 }
 
-.navbar__link:hover, .navbar__link--active {
-	color: var(--ifm-navbar-link-hover-color);
+.footer {
+
+	a {
+		text-decoration: underline;
+		text-decoration-color: rgba(black, 0.3);
+		transition: color 0.2s ease, text-decoration 0.2s ease;
+
+		[data-theme='dark'] & {
+			text-decoration-color: rgba(white, 0.4);
+		}
+
+		&:hover, &:focus, &:active {
+			text-decoration-color: currentColor;
+		}
+	}
+
+	&__bottom {
+
+		&__author {
+			display: block;
+			font-size: 1rem;
+		}
+	}
 }
