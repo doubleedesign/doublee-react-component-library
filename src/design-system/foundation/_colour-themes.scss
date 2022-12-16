@@ -1,0 +1,25 @@
+$themes: (
+	'test': (
+		'primary': #685C82,
+		'secondary': #918FB3,
+		'accent': #A61CBB,
+		'success': #CAE19B,
+		'info': #BDC8D8,
+		'warning': #F8EE58,
+		'alert': #A90076,
+		'light': #E9F1F2,
+		'dark': #1D1C20,
+	)
+);
+
+@each $theme, $colours in $themes {
+	[data-theme="#{$theme}"] {
+		:root & {
+			@each $colour, $value in $colours {
+				--theme-colour-#{$colour}: #{$value};
+				--theme-colour-#{$colour}-light: #{lighten($value, 10%)};
+				--theme-colour-#{$colour}-dark: #{darken($value, 10%)};
+			}
+		}
+	}
+}
