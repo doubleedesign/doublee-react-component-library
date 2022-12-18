@@ -1,12 +1,12 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require('./src/prism/light');
+const darkCodeTheme = require('./src/prism/dark');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: 'Double-E Design System',
+	title: 'Double-E Design Component Library',
 	tagline: 'Designing things and writing code',
 	url: 'https://your-docusaurus-test-site.com',
 	baseUrl: '/',
@@ -54,7 +54,7 @@ const config = {
 		({
 			navbar: {
 				style: 'dark',
-				title: 'Double-E Design System',
+				title: 'Double-E Design Component Library',
 				logo: {
 					src: 'img/icon.svg',
 					srcDark: 'img/icon-darkmode.svg'
