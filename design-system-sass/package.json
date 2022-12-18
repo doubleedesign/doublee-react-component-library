@@ -1,0 +1,24 @@
+{
+	"name": "doublee-design-system-react-sass",
+	"author": "Leesa Ward",
+	"homepage": "https://github.com/doubleedesign/doublee-design-system-react#readme",
+	"version": "1.0.0",
+	"description": "Common components for my React projects, styled with CSS modules with the help of SASS.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/doubleedesign/doublee-design-system-react.git"
+	},
+	"dependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"sass": "^1.56.2"
+	},
+	"devDependencies": {
+		"eslint": "^8.29.0",
+		"@typescript-eslint/eslint-plugin": "^5.46.1"
+	}
+}
