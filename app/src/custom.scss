@@ -5,6 +5,7 @@
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Inter+Tight:wght@300;800&display=swap');
+@import url('//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css');
 
 :root {
 	--ifm-color-primary: #4527a0;
@@ -22,6 +23,7 @@
 	--ifm-color-danger: #fa383e;
 	--ifm-font-family-base: 'Crimson Text', serif;
 	--ifm-font-family-secondary: 'Inter Tight', var(--ifm-font-family-base);
+	--ifm-font-family-monospace: 'Hack', monospace;
 	--ifm-heading-font-family: var(--ifm-font-family-base);
 	--doc-sidebar-width: 15rem !important;
 }
@@ -42,7 +44,6 @@
 }
 
 .theme-doc-markdown {
-
 	p {
 		font-size: 1.2rem;
 	}

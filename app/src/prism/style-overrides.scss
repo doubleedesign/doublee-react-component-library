@@ -1,0 +1,70 @@
+/**
+ * Note: This works together with the proper prism themes and some hacks in the CodeBlock component,
+ * so in the case of future conflicts/bugs check those places too
+ */
+// TODO: This is a dark theme, make a good light one
+.theme-code-block {
+
+	.language-ts,
+	.language-tsx {
+
+		.token {
+
+			&.literal-property {
+				color: rgb(255, 83, 192);
+			}
+
+			&.property-access {
+				color: rgb(189, 147, 249);
+			}
+
+			&.function-variable,
+			&.function.property-access {
+				color: rgb(255, 191, 108) !important;
+				font-style: normal !important;
+			}
+
+			&.parameter {
+				color: rgb(252, 173, 221);
+				text-decoration: underline;
+
+				&.builtin, &.operator {
+					text-decoration: none !important;
+				}
+			}
+
+			&.number {
+				color: rgb(186,255,181);
+			}
+
+			&.exported-var {
+				color: rgb(135, 253, 123);
+				font-style: italic;
+				text-decoration: underline;
+			}
+
+			&.known-class-name {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.language-css {
+
+		.token {
+
+			&.selector,
+			&.id {
+				color: rgb(0,247,255) !important;
+			}
+
+			&.class {
+				color: rgb(0,255,111) !important;
+			}
+
+			&.property {
+				color: rgb(189, 147, 249);
+			}
+		}
+	}
+}

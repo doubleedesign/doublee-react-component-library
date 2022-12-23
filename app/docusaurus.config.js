@@ -1,7 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('./src/prism/light');
+// const lightCodeTheme = require('./src/prism/light'); // TODO
 const darkCodeTheme = require('./src/prism/dark');
 
 /** @type {import('@docusaurus/types').Config} */
@@ -71,8 +71,9 @@ const config = {
 				style: 'light'
 			},
 			prism: {
-				theme: lightCodeTheme,
+				theme: darkCodeTheme, // TODO: Make a good light theme
 				darkTheme: darkCodeTheme,
+				additionalLanguages: ['tsx', 'typescript'], // customised versions found in theme folder
 			},
 		}),
 };
